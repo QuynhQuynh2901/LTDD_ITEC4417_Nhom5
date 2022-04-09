@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartFragment"
+    android:id="@+id/fl_cart">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_total_price"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp" />
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_payment"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:text="Tổng tiền: "
+            android:textAlignment="center"
+            android:textColor="@color/theme_darkcolor"
+            android:textSize="25dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/button_exit_border"
+            android:padding="10dp"
+            android:text="Thanh toán"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</FrameLayout>

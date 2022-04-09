@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">SaleBookApp</string>
+    <string name="err_fullname">Họ và tên không được trống!</string>
+    <string name="err_phone">Số điện thoại chưa chính xác!</string>
+    <string name="err_email">Email chưa chính xác!</string>
+    <string name="err_password">Mật khẩu tối thiểu 8 ký tự! Bao gồm: ký tự HOA, thường và số</string>
+    <string name="err_value">Please enter value</string>
+    <string name="err_confirmpassword">Mật khẩu không trùng khớp! Hãy thử lại!</string>
+
+    <string-array name="option">
+        <item>Seller</item>
+        <item>Buyer</item>
+    </string-array>
+
+    <string name="book_fragment">Book Fragment</string>
+    <string name="cart_fragment">Cart Fragment</string>
+    <string name="notice_fragment">Notice Fragment</string>
+
+    <string name="tab_1">Sách</string>
+    <string name="tab_2_buyer">Giỏ hàng</string>
+    <string name="tab_2_saler">Đơn hàng</string>
+    <string name="tab_3">Tài khoản</string>
+</resources>
